@@ -1,0 +1,43 @@
+@import '~@/styles/variables';
+
+button {
+  color: $black;
+  height: 48px;
+  border: none;
+  outline: none;
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &:active {
+    border: 2px solid $grey;
+  }
+}
+
+.clear {
+  background-color: $blue;
+  width: 192px;
+  border-radius: 32px;
+  text-align: center;
+  align-content: center;
+  font-size: 18px;
+}
+
+.operator {
+  background-color: $skin;
+  width: 48px;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  font-size: 18px;
+}
+
+.number {
+  background-color: $blue;
+  width: 48px;
+  border-radius: 50%;
+  text-align: center;
+  align-content: center;
+  font-size: 18px;
+}

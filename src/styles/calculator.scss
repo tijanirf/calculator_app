@@ -1,0 +1,28 @@
+@import '~@/styles/variables';
+
+.calculator {
+  border: 1px solid $grey;
+  border-radius: 8px;
+  padding: 24px;
+  max-width: 268px;
+
+  &__preview {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__result {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__buttons {
+    border-top: 1px solid $grey;
+
+    &__row {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 16px;
+    }
+  }
+}

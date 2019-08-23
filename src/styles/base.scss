@@ -1,0 +1,11 @@
+@import 'variables';
+
+#app {
+  font-family: $font-text;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+  justify-content: center;
+  min-height: 100% !important;
+  overflow-x: hidden;
+}
