@@ -1,5 +1,5 @@
 <template>
-  <button :class="{ 'clear': clear, 'operator': operator, 'number': number }">
+  <button :class="{ 'clear': clear, 'operator': operator, 'number': number, 'disable': disable }" @click="clicked">
     {{label}}
   </button>
 </template>
@@ -41,6 +41,25 @@ export default {
       }
 
       return false
+    },
+    disable() {
+      if (this.type === 'disable') {
+        return true
+      }
+
+      return false
+    }
+  },
+  methods: {
+    clicked() {
+      if (this.type !== 'disable') {
+        if (this.label === 'x') {
+          // eval function does not detect 'x' character for multiplication
+          this.$emit('clicked', '*')
+        } else {
+          this.$emit('clicked', this.label)
+        }
+      }
     }
   }
 }
